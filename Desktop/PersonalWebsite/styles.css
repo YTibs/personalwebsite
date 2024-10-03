@@ -1,0 +1,107 @@
+body {
+    background-color: #000;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container {
+    border: 2px solid #00FF00;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+a {
+    color: #00FF00;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #00FF00;
+}
+
+#matrix-typewriter {
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre; /* Preserves spaces and line breaks */
+    margin-top: 20px;
+    text-align: left;
+}
+.caption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #00FF00;
+}
+ul {
+    margin-left: 20px;
+}
+
+.download-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00FF00;
+    color: #00FF00;
+    text-decoration: none
+}
+
+.music-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.music-list li {
+    margin-bottom: 20px;
+}
+
+.music-list p {
+    margin-bottom: 10px; /* Adds space between the title and the audio player */
+}
+
+audio {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
