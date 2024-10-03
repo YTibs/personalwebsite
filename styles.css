@@ -1,10 +1,40 @@
+/* Boot Screen Styling */
+.boot-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.boot-text {
+    font-size: 24px;
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Body Styling */
 body {
     background-color: #000;
     color: #00FF00;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    cursor: url('assets/retro-cursor.png'), auto;
 }
 
+/* General Layout */
 .container {
     border: 2px solid #00FF00;
     margin: 50px auto;
@@ -36,14 +66,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Content Area */
 .content {
     margin-top: 20px;
 }
 
+/* Links */
 a {
     color: #00FF00;
 }
 
+/* Gallery Styling */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +90,13 @@ a {
     border: 2px solid #00FF00;
 }
 
+.caption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #00FF00;
+}
+
+/* Matrix Typewriter Effect */
 #matrix-typewriter {
     color: #00FF00;
     font-family: 'Courier New', Courier, monospace;
@@ -64,15 +104,13 @@ a {
     margin-top: 20px;
     text-align: left;
 }
-.caption {
-    margin-top: 5px;
-    font-size: 0.9em;
-    color: #00FF00;
-}
+
+/* List Styling */
 ul {
     margin-left: 20px;
 }
 
+/* Download Button */
 .download-button {
     margin-top: 20px;
     text-align: center;
@@ -83,9 +121,10 @@ ul {
     padding: 10px 20px;
     border: 2px solid #00FF00;
     color: #00FF00;
-    text-decoration: none
+    text-decoration: none;
 }
 
+/* Music List Styling */
 .music-list {
     list-style-type: none;
     padding: 0;
@@ -105,3 +144,72 @@ audio {
     width: 100%;
     max-width: 300px;
 }
+
+/* Button Styling */
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: url('assets/retro-cursor.png'), auto;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+}
+
+.terminal-container {
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border: 2px solid #00FF00;
+    width: 80%;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+#terminal-input {
+    width: 100%;
+    background-color: black;
+    color: #00FF00;
+    border: none;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    caret-color: #00FF00;
+}
+
+#terminal-output {
+    margin-bottom: 10px;
+    min-height: 50px; /* Adjust as needed */
+    white-space: pre-wrap; /* Preserve line breaks */
+}
+
+#terminal-guide {
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#terminal-title {
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#terminal-help {
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+

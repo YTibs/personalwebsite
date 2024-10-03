@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Boot-up screen -->
+    <div id="boot-screen" class="boot-screen">
+        <div class="boot-text">Booting up...</div>
+    </div>
+    
+    
+    
+    <!-- Main content of the website -->
     <div class="container">
         <h1>Welcome to Tibet</h1>
         <nav>
@@ -20,9 +28,20 @@
         </nav>
         <div class="content">
             <p>This is a personal website that showcases a little bit of who I am.</p>
-            <div id="matrix-typewriter"></div> <!-- This is where the typing effect will be displayed -->
+            <div id="matrix-typewriter"></div> <!-- Typing effect will happen here -->
         </div>
     </div>
+
+
+    <div class="terminal-container">
+        <p id="terminal-title">Terminal</p>
+        <p id="terminal-help">Enter "help" to see list of commands</p>
+        <div id="terminal-output"></div> <!-- Where output will be displayed -->
+        <input type="text" id="terminal-input" placeholder="Type a command..." autofocus>
+    </div>
+    
+
+    <!-- External JavaScript file -->
     <script src="scripts.js"></script>
 </body>
 </html>
