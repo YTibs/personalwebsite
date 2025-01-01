@@ -71,6 +71,17 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
+#about-content {
+    text-align: left; /* Align text to the left */
+    line-height: 1.6; /* Add better line spacing */
+    margin-top: 20px;
+}
+
+#about-content p {
+    text-indent: 2em; /* Indent the first line */
+    margin-bottom: 1rem; /* Add spacing between paragraphs */
+}
+
 /* Links */
 a {
     color: #00FF00;

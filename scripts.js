@@ -49,6 +49,9 @@ function handleTerminalCommand(command) {
         case 'home':
             window.location.href = 'index.html';
             break;
+        case 'about me':
+            window.location.href = 'about.html';
+            break;
         case 'resume':
             window.location.href = 'resume.html';
             break;
@@ -64,7 +67,7 @@ function handleTerminalCommand(command) {
             break;
         case 'help':
         // Display the list of available commands as help instructions
-            terminalOutput.innerHTML += `\nAvailable commands:\n- home\n- resume\n- music\n- photos\n- linkedin\n`;
+            terminalOutput.innerHTML += `\nAvailable commands:\n- home\n- about me \n-resume\n- music\n- photos\n- linkedin\n`;
             break;
         default:
             terminalOutput.innerHTML += `\nUnknown command: ${command}\n`;
